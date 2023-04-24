@@ -1,3 +1,4 @@
+/* eslint-disable no-array-constructor */
 const ListData = [
   {
     title: 'Basic',
@@ -7,11 +8,48 @@ const ListData = [
     ],
   },
   {
-    title: 'Sides',
+    title: 'Design',
     data: [
-      {title: 'French Fries', id: 'French Fries', desc: 'desc'},
-      {title: 'Onion Rings', id: 'Onion Rings', desc: 'desc'},
-      {title: 'Fried Shrimps', id: 'Fried Shrimps', desc: 'desc'},
+      {
+        title: 'FixedDimentions',
+        id: 'FixedDimentions',
+        desc: 'FixedDimentions',
+      },
+      {
+        title: 'FlexDimensions',
+        id: 'FlexDimensions',
+        desc: 'FlexDimensions',
+      },
+      {
+        title: 'PercentageDimensions',
+        id: 'PercentageDimensions',
+        desc: 'PercentageDimensions',
+      },
+      {
+        title: 'Flex',
+        id: 'Flex',
+        desc: 'Flex',
+      },
+      {
+        title: 'FlexDirection',
+        id: 'FlexDirection',
+        desc: 'FlexDirection',
+      },
+      {
+        title: 'LayoutDirection',
+        id: 'LayoutDirection',
+        desc: 'LayoutDirection',
+      },
+      {
+        title: 'JustifyContent',
+        id: 'JustifyContent',
+        desc: 'JustifyContent',
+      },
+      {
+        title: 'AlignItemLayout',
+        id: 'AlignItemLayout',
+        desc: 'AlignItemLayout',
+      },
     ],
   },
   {
@@ -31,6 +69,18 @@ const ListData = [
   },
 ];
 
-const ListComponent = ['LotsOfStyles', 'PropsAndState'];
+const ListComponent = [
+  'LotsOfStyles',
+  'PropsAndState',
+  'FixedDimentions',
+  'FlexDimensions',
+  'PercentageDimensions',
+];
 
-export {ListData, ListComponent};
+var ListComponents: string[] = [];
+
+function makeListComponents() {
+  ListData.forEach(el => el.data.forEach(e => ListComponents.push(e.id)));
+}
+
+export {ListData, ListComponent, ListComponents, makeListComponents};

@@ -11,7 +11,7 @@ import {
   useColorScheme,
 } from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-import {ListData} from '../model/ListData';
+import {ListComponents, ListData} from '../model/ListData';
 
 function Home({navigation, route}): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -35,16 +35,24 @@ function Home({navigation, route}): JSX.Element {
   // };
 
   const itemOnPress = (id: string) => {
-    switch (id) {
-      case 'LotsOfStyles':
-        navigation.navigate('LotsOfStyles');
-        break;
-      case 'PropsAndState':
-        navigation.navigate('PropsAndState');
-        break;
-      default:
-        break;
+    if (ListComponents.includes(id)) {
+      navigation.navigate(id);
     }
+
+    // switch (id) {
+    //   case 'LotsOfStyles':
+    //     navigation.navigate('LotsOfStyles');
+    //     break;
+    //   case 'PropsAndState':
+    //     navigation.navigate('PropsAndState');
+    //     break;
+
+    //   case 'FixedDimentions':
+    //     navigation.navigate('FixedDimentions');
+    //     break;
+    //   default:
+    //     break;
+    // }
   };
 
   return (
