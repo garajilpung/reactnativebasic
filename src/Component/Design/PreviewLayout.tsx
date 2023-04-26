@@ -14,34 +14,55 @@ const PreviewLayout = ({
   values,
   selectedValue,
   setSelectedValue,
-}: PreviewLayoutProps) => (
-  <View style={{padding: 10, flex: 1}}>
-    <Text style={styles.label}>{label}</Text>
-    <View style={styles.row}>
-      {values.map(value => (
-        <TouchableOpacity
-          key={value}
-          onPress={() => setSelectedValue(value)}
-          style={[styles.button, selectedValue === value && styles.selected]}>
-          <Text
-            style={[
-              styles.buttonLabel,
-              selectedValue === value && styles.selectedLabel,
-            ]}>
-            {value}
-          </Text>
-        </TouchableOpacity>
-      ))}
+}: PreviewLayoutProps) => {
+  var styleContainer = styles.container;
+
+  switch (label) {
+    case 'alignContent':
+    case 'FlexWrapLayout':
+      styleContainer = styles.container2;
+      break;
+    default:
+      styleContainer = styles.container;
+      break;
+  }
+
+  return (
+    <View style={{padding: 10, flex: 1}}>
+      <Text style={styles.label}>{label}</Text>
+      <View style={styles.row}>
+        {values.map(value => (
+          <TouchableOpacity
+            key={value}
+            onPress={() => setSelectedValue(value)}
+            style={[styles.button, selectedValue === value && styles.selected]}>
+            <Text
+              style={[
+                styles.buttonLabel,
+                selectedValue === value && styles.selectedLabel,
+              ]}>
+              {value}
+            </Text>
+          </TouchableOpacity>
+        ))}
+      </View>
+      <View style={[styleContainer, {[label]: selectedValue}]}>{children}</View>
     </View>
-    <View style={[styles.container, {[label]: selectedValue}]}>{children}</View>
-  </View>
-);
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginTop: 8,
     backgroundColor: 'aliceblue',
+  },
+  container2: {
+    flex: 1,
+    flexWrap: 'wrap',
+    marginTop: 8,
+    backgroundColor: 'aliceblue',
+    maxHeight: 400,
   },
   box: {
     width: 50,

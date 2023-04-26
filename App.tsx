@@ -20,6 +20,20 @@ import FlexDirection from './src/Component/Design/FlexDirection';
 import LayoutDirection from './src/Component/Design/LayoutDirection';
 import JustifyContent from './src/Component/Design/JustifyContent';
 import AlignItemLayout from './src/Component/Design/AlignItems';
+import AlignSelfLayout from './src/Component/Design/AlignSelf';
+import AlignContentLayout from './src/Component/Design/AlignContent';
+import FlexWrapLayout from './src/Component/Design/FlexWrap';
+import FlexGrowShrinkLayout from './src/Component/Design/FlexGrowShrink';
+import RowGapAndColumnGap from './src/Component/Design/RowColumnGap';
+import WidthHeightBasics from './src/Component/Design/WidthAndHeight';
+import PositionLayout from './src/Component/Design/AbsoluteAndRelativeLayout';
+import ImageView from './src/Component/Design/ImageView';
+import ButtonBasics from './src/Component/Design/ButtonBasic';
+import Touchalbes from './src/Component/Design/Touchalbes';
+import AniView from './src/Component/Design/Animation';
+import GestureAction from './src/Component/Design/GestureAction';
+import TimerExample from './src/Component/Timer';
+import NativeModuleiOS from './src/Component/NativeModule';
 
 const Stack = createNativeStackNavigator();
 
@@ -74,7 +88,6 @@ function App(): JSX.Element {
           component={LayoutDirection}
           options={{title: 'LayoutDirection'}}
         />
-
         <Stack.Screen
           name="JustifyContent"
           component={JustifyContent}
@@ -84,6 +97,76 @@ function App(): JSX.Element {
           name="AlignItemLayout"
           component={AlignItemLayout}
           options={{title: 'AlignItemLayout'}}
+        />
+        <Stack.Screen
+          name="AlignSelfLayout"
+          component={AlignSelfLayout}
+          options={{title: 'AlignSelfLayout'}}
+        />
+        <Stack.Screen
+          name="AlignContentLayout"
+          component={AlignContentLayout}
+          options={{title: 'AlignContentLayout'}}
+        />
+        <Stack.Screen
+          name="FlexWrapLayout"
+          component={FlexWrapLayout}
+          options={{title: 'FlexWrapLayout'}}
+        />
+        <Stack.Screen
+          name="FlexGrowShrinkLayout"
+          component={FlexGrowShrinkLayout}
+          options={{title: 'FlexGrowShrinkLayout'}}
+        />
+        <Stack.Screen
+          name="RowGapAndColumnGap"
+          component={RowGapAndColumnGap}
+          options={{title: 'RowGapAndColumnGap'}}
+        />
+        <Stack.Screen
+          name="WidthHeightBasics"
+          component={WidthHeightBasics}
+          options={{title: 'WidthHeightBasics'}}
+        />
+        <Stack.Screen
+          name="PositionLayout"
+          component={PositionLayout}
+          options={{title: 'PositionLayout'}}
+        />
+        <Stack.Screen
+          name="ImageView"
+          component={ImageView}
+          options={{title: 'ImageView'}}
+        />
+        <Stack.Screen
+          name="ButtonBasics"
+          component={ButtonBasics}
+          options={{title: 'ButtonBasics'}}
+        />
+        <Stack.Screen
+          name="Touchalbes"
+          component={Touchalbes}
+          options={{title: 'Touchalbes'}}
+        />
+        <Stack.Screen
+          name="AniView"
+          component={AniView}
+          options={{title: 'AniView'}}
+        />
+        <Stack.Screen
+          name="GestureAction"
+          component={GestureAction}
+          options={{title: 'GestureAction'}}
+        />
+        <Stack.Screen
+          name="TimerExample"
+          component={TimerExample}
+          options={{title: 'TimerExample'}}
+        />
+        <Stack.Screen
+          name="NativeModuleiOS"
+          component={NativeModuleiOS}
+          options={{title: 'NativeModuleiOS'}}
         />
       </Stack.Navigator>
     </NavigationContainer>

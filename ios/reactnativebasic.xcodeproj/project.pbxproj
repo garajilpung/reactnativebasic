@@ -14,6 +14,9 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-reactnativebasic-reactnativebasicTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-reactnativebasic-reactnativebasicTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8B45C34D29F9040900679078 /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B45C34C29F9040900679078 /* RCTCalendarModule.m */; };
+		8B45C35029F90AF500679078 /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B45C34F29F90AF500679078 /* CalendarManager.swift */; };
+		8B45C35229F90B4900679078 /* CalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B45C35129F90B4900679078 /* CalendarManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,11 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-reactnativebasic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactnativebasic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = reactnativebasic/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-reactnativebasic-reactnativebasicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactnativebasic-reactnativebasicTests.release.xcconfig"; path = "Target Support Files/Pods-reactnativebasic-reactnativebasicTests/Pods-reactnativebasic-reactnativebasicTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B45C34B29F9040900679078 /* RCTCalendarModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTCalendarModule.h; sourceTree = "<group>"; };
+		8B45C34C29F9040900679078 /* RCTCalendarModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTCalendarModule.m; sourceTree = "<group>"; };
+		8B45C34E29F90AF500679078 /* reactnativebasic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "reactnativebasic-Bridging-Header.h"; sourceTree = "<group>"; };
+		8B45C34F29F90AF500679078 /* CalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
+		8B45C35129F90B4900679078 /* CalendarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarManager.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -86,6 +94,7 @@
 		13B07FAE1A68108700A75B9A /* reactnativebasic */ = {
 			isa = PBXGroup;
 			children = (
+				8B45C34A29F9040900679078 /* module */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -135,6 +144,19 @@
 				00E356EE1AD99517003FC87E /* reactnativebasicTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8B45C34A29F9040900679078 /* module */ = {
+			isa = PBXGroup;
+			children = (
+				8B45C34B29F9040900679078 /* RCTCalendarModule.h */,
+				8B45C34C29F9040900679078 /* RCTCalendarModule.m */,
+				8B45C34F29F90AF500679078 /* CalendarManager.swift */,
+				8B45C34E29F90AF500679078 /* reactnativebasic-Bridging-Header.h */,
+				8B45C35129F90B4900679078 /* CalendarManager.m */,
+			);
+			name = module;
+			path = reactnativebasic/module;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -207,7 +229,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -412,6 +434,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B45C35229F90B4900679078 /* CalendarManager.m in Sources */,
+				8B45C34D29F9040900679078 /* RCTCalendarModule.m in Sources */,
+				8B45C35029F90AF500679078 /* CalendarManager.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -432,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-reactnativebasic-reactnativebasicTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -459,6 +485,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-reactnativebasic-reactnativebasicTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = reactnativebasicTests/Info.plist;
@@ -500,6 +527,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = reactnativebasic;
+				SWIFT_OBJC_BRIDGING_HEADER = "reactnativebasic/module/reactnativebasic-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -526,6 +554,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = reactnativebasic;
+				SWIFT_OBJC_BRIDGING_HEADER = "reactnativebasic/module/reactnativebasic-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

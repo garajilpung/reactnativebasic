@@ -50,6 +50,76 @@ const ListData = [
         id: 'AlignItemLayout',
         desc: 'AlignItemLayout',
       },
+      {
+        title: 'AlignSelfLayout',
+        id: 'AlignSelfLayout',
+        desc: 'AlignSelfLayout',
+      },
+      {
+        title: 'AlignContentLayout',
+        id: 'AlignContentLayout',
+        desc: 'AlignContentLayout',
+      },
+      {
+        title: 'FlexWrapLayout',
+        id: 'FlexWrapLayout',
+        desc: 'FlexWrapLayout',
+      },
+      {
+        title: 'FlexGrowShrinkLayout',
+        id: 'FlexGrowShrinkLayout',
+        desc: 'FlexGrowShrinkLayout',
+      },
+      {
+        title: 'RowGapAndColumnGap',
+        id: 'RowGapAndColumnGap',
+        desc: 'RowGapAndColumnGap',
+      },
+      {
+        title: 'WidthHeightBasics',
+        id: 'WidthHeightBasics',
+        desc: 'WidthHeightBasics',
+      },
+      {
+        title: 'PositionLayout',
+        id: 'PositionLayout',
+        desc: 'PositionLayout',
+      },
+      {
+        title: 'ImageView',
+        id: 'ImageView',
+        desc: 'ImageView',
+      },
+      {
+        title: 'ButtonBasics',
+        id: 'ButtonBasics',
+        desc: 'ButtonBasics',
+      },
+      {
+        title: 'Touchalbes',
+        id: 'Touchalbes',
+        desc: 'Touchalbes',
+      },
+      {
+        title: 'AniView',
+        id: 'AniView',
+        desc: 'AniView',
+      },
+      {
+        title: 'GestureAction',
+        id: 'GestureAction',
+        desc: 'GestureAction',
+      },
+      {
+        title: 'TimerExample',
+        id: 'TimerExample',
+        desc: 'TimerExample',
+      },
+      {
+        title: 'NativeModuleiOS',
+        id: 'NativeModuleiOS',
+        desc: 'NativeModuleiOS',
+      },
     ],
   },
   {
