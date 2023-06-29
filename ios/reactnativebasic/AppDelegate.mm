@@ -17,6 +17,9 @@
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
 {
+
+  NSLog("vvv3");
+
 #if DEBUG
   return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"];
 #else
