@@ -154,3 +154,5 @@ function makeListComponents() {
 }
 
 export {ListData, ListComponent, ListComponents, makeListComponents};
+
+/* eslint-disable no-array-constructor */
